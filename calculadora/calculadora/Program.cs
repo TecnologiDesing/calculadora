@@ -6,6 +6,7 @@
 
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 
          //<<<<<< HEAD
 
@@ -456,5 +457,15 @@
 
 
 
+=======
+            
+        }
+
+        static void salir_de_app()
+        {
+            Environment.Exit(0);
+        }
+
+>>>>>>> salida
     }
 }
