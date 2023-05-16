@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
          //<<<<<< HEAD
 
             MostrarMenu();
@@ -38,60 +37,87 @@
 
         }
 
-
-
         static void opciones_menu()
         {
 
 
             while (true)
-
-            
-        }
-
-
-
-
-        static void logica_de_resta()
-        {
-
-
-            bool salir_a_menu_2 = false;
-
-            while (!salir_a_menu_2)
             {
 
                 try
                 {
 
-                    // declaracion
+                    int opciones;
 
-                    int numero3;
-                    int numero4;
-                    int resResta;
+                    opciones = Convert.ToInt32(Console.ReadLine());
 
-                    //perdir datos
+                    switch (opciones)
+                    {
 
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el primer numero  ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero3 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el segundo numero ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero4 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    salir_a_menu_2 = true;
-                    // realizar operaciones
+                        case 1:
+                            Console.WriteLine();
+                            Console.WriteLine("       ╔══════════════════════════════╗");
+                            Console.WriteLine("       ║  Has elegido hacer una suma  ║");
+                            Console.WriteLine("       ╚══════════════════════════════╝");
+                            Console.WriteLine();
+                            logica_de_Suma();
+                            MostrarMenu();
 
-                    resResta = numero3 - numero4;
+                            break;
 
-                    // mostrar resultado
-                    Console.WriteLine("╔══════════════════════════════════════════════════╗");
-                    Console.WriteLine("       El resultado de la resta es " + resResta);
-                    Console.WriteLine("╚══════════════════════════════════════════════════╝");
-                    Console.WriteLine();
+                        case 2:
+                            Console.WriteLine();
+                            Console.WriteLine("      ╔═══════════════════════════════╗");
+                            Console.WriteLine("      ║  Has elegido hacer una resta  ║");
+                            Console.WriteLine("      ╚═══════════════════════════════╝");
+                            Console.WriteLine();
+                            logica_de_resta();
+                            MostrarMenu();
+
+                            break;
+
+                        case 3:
+                            Console.WriteLine();
+                            Console.WriteLine("   ╔══════════════════════════════════╗");
+                            Console.WriteLine("   ║  Has elegido hacer una division  ║");
+                            Console.WriteLine("   ╚══════════════════════════════════╝");
+                            Console.WriteLine();
+                            logica_de_division();
+                            MostrarMenu();
+
+                            break;
+
+                        case 4:
+                            Console.WriteLine();
+                            Console.WriteLine("Has elegido hacer una multiplicacion");
+                            Console.WriteLine();
+                            logica_de_multiplicacion();
+                            MostrarMenu();
+
+                            break;
+
+                        case 5:
+                            Console.WriteLine();
+                            Console.WriteLine("   ╔══════════════════════════════════════╗");
+                            Console.WriteLine("   ║  Has elegido salir de la aplicación  ║");
+                            Console.WriteLine("   ╚══════════════════════════════════════╝");
+                            salir_de_app();
+
+                            break;
+
+
+
+                        default:
+                            Console.WriteLine();
+                            Console.WriteLine("╔════════════════════════════════════════════════╗");
+                            Console.WriteLine("║  Opcion incorrecta, ingrese una opcion valida  ║");
+                            Console.WriteLine("╚════════════════════════════════════════════════╝");
+                            Console.WriteLine();
+                            MostrarMenu();
+
+                            break;
+
+                    }
 
                 }
 
@@ -104,6 +130,7 @@
                     Console.WriteLine("       ║  usted no coloco un numero  ║");
                     Console.WriteLine("       ╚═════════════════════════════╝");
                     Console.WriteLine();
+                    MostrarMenu();
 
                 }
 
@@ -116,165 +143,14 @@
                     Console.WriteLine("  ║  usted exedio el numero de caracteres  ║");
                     Console.WriteLine("  ╚════════════════════════════════════════╝");
                     Console.WriteLine();
-
+                    MostrarMenu();
                 }
 
             }
 
-
         }
 
 
-        static void logica_de_division()
-        {
-
-            bool salir_a_menu_3 = false;
-
-            while (!salir_a_menu_3)
-            {
-
-
-                try
-                {
-
-                    // declaracion
-
-                    decimal numero5;
-                    decimal numero6;
-                    decimal resDivision;
-
-                    //perdir datos
-
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el primer numero  ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero5 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el segundo numero ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero6 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    salir_a_menu_3 = true;
-                    // realizar operaciones
-
-                    resDivision = numero5 / numero6;
-
-                    // mostrar resultado
-
-                    Console.WriteLine("╔════════════════════════════════════════════════════════════════════╗");
-                    Console.WriteLine("          El resultado de la division es " + resDivision);
-                    Console.WriteLine("╚════════════════════════════════════════════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-
-                catch (FormatException)
-
-                {
-
-                    Console.WriteLine();
-                    Console.WriteLine("       ╔═════════════════════════════╗");
-                    Console.WriteLine("       ║  usted no coloco un numero  ║");
-                    Console.WriteLine("       ╚═════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-                catch (OverflowException)
-
-                {
-
-                    Console.WriteLine();
-                    Console.WriteLine("  ╔════════════════════════════════════════╗");
-                    Console.WriteLine("  ║  usted exedio el numero de caracteres  ║");
-                    Console.WriteLine("  ╚════════════════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-                catch (DivideByZeroException)
-                {
-                    Console.WriteLine("usted a dividio entre 0");
-                }
-
-            }
-
-
-
-
-
-
-        }
-        static void logica_de_multiplicacion()
-        {
-
-            bool salir_a_menu_4 = false;
-
-            while (!salir_a_menu_4)
-            {
-
-
-                try
-                {
-
-                    // declaracion
-
-                    int numero7;
-                    int numero8;
-                    int resMultiplicacion;
-
-                    //perdir datos
-
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el primer numero  ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero7 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    Console.WriteLine("        ╔════════════════════════════╗");
-                    Console.WriteLine("        ║  ingrese el segundo numero ║");
-                    Console.WriteLine("        ╚════════════════════════════╝");
-                    numero8 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine();
-                    salir_a_menu_4 = true;
-                    // realizar operaciones
-
-                    resMultiplicacion = numero7 * numero8;
-
-                    // mostrar resultado
-
-                    Console.WriteLine("       ╔═════════════════════════════════════════════╗");
-                    Console.WriteLine("         El resultado de la multiplicacion " + resMultiplicacion);
-                    Console.WriteLine("       ╚═════════════════════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-
-                catch (FormatException)
-
-                {
-
-                    Console.WriteLine();
-                    Console.WriteLine("       ╔═════════════════════════════╗");
-                    Console.WriteLine("       ║  usted no coloco un numero  ║");
-                    Console.WriteLine("       ╚═════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-                catch (OverflowException)
-
-                {
-
-                    Console.WriteLine();
-                    Console.WriteLine("  ╔════════════════════════════════════════╗");
-                    Console.WriteLine("  ║  usted exedio el numero de caracteres  ║");
-                    Console.WriteLine("  ╚════════════════════════════════════════╝");
-                    Console.WriteLine();
-
-                }
-
-
-            }
-
-        }
 
 
 
