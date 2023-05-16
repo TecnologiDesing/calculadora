@@ -15,7 +15,7 @@
         static void MostrarMenu()
         {
 
-<<<<<<< HEAD
+
             Console.WriteLine();
             Console.WriteLine("    Elige la operacion que quiere realizar     ");
             Console.WriteLine();
@@ -39,13 +39,6 @@
         }
 
         static void opciones_menu()
-=======
-
-
-
-
-        static void logica_de_Suma()
->>>>>>> logica
         {
 
 
@@ -157,22 +150,6 @@
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
