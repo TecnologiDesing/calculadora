@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
         }
+
+        static void salir_de_app()
+        {
+            Environment.Exit(0);
+        }
+
     }
 }
