@@ -456,16 +456,11 @@
         //>>>>>>> logica
 
 
-
-=======
-            
-        }
-
         static void salir_de_app()
         {
             Environment.Exit(0);
         }
 
->>>>>>> salida
+      //>>>>>>> salida
     }
 }
