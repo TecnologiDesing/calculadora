@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+         //<<<<<< HEAD
 
             MostrarMenu();
             opciones_menu();
-=======
+
             
         }
         static void MostrarMenu()
@@ -32,9 +32,10 @@
             Console.WriteLine("╔════════════════════════════════════════════╗");
             Console.WriteLine("║                * #5 Salir *                ║");
             Console.WriteLine("╚════════════════════════════════════════════╝");
->>>>>>> menu
+         //>>>>>>> menu
 
         }
+
 
 
 
