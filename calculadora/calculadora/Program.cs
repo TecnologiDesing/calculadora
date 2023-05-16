@@ -39,11 +39,6 @@
 
 
 
-
-=======
-            
-        }
-
         static void opciones_menu()
         {
 
@@ -157,6 +152,9 @@
 
         }
 
->>>>>>> opciones
+         //>>>>>>> opciones
+
+
+
     }
 }
